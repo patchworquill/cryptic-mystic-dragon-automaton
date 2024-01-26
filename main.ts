@@ -2,7 +2,8 @@
 import * as THREE from "three";
 import { GLTFLoader } from "three/addons/loaders/GLTFLoader.js";
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
-import Stats from 'three/examples/jsm/libs/stats.module'
+import Stats from 'three/examples/jsm/libs/stats.module';
+// import glbUrl from "assets/CMDA_animation.glb";
 
 const scene = new THREE.Scene();
 // scene.add(new THREE.AxesHelper(5))
@@ -29,7 +30,7 @@ let lastAction: THREE.AnimationAction
 const gltfLoader = new GLTFLoader()
 
 gltfLoader.load( 
-    'assets/3D/CMDA_animation.glb', 
+    'assets/CMDA_animation.glb', // 'assets/CMDA_animation.glb'
     ( gltf ) => {
     
         mixer = new THREE.AnimationMixer(gltf.scene);

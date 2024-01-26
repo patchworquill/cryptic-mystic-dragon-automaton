@@ -4,6 +4,11 @@
     "vite": "^5.0.12"
   },
   "dependencies": {
+    "ar.js": "^2.0.8",
     "three": "^0.160.1"
+  },
+  "scripts": {
+    "build": "vite build",
+    "preview": "vite preview"
   }
 }
